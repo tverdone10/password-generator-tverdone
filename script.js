@@ -28,10 +28,26 @@ console.log(passWord)
 
 
 
+function shuffle(passArray) {
+    passArray.sort(function (){
+        return Math.random () -.5;
+    })
+}
+
+console.log(shuffle(passArray))
+
 function genErate () {
     document.getElementById("password").innerHTML = passArray.join("")
 }
 
+function copyClipboard(){
+    var copyText = document.querySelector("textarea");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999)
+    document.execCommand("copy"); 
+
+
+}
 
 // or
 
