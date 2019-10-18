@@ -6,7 +6,37 @@ body{
 }
 
 h1 {
-    margin-top: 200px;
-   
-  
+    margin-top: 200px; 
+}
+
+.glow {
+  color: #fff;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.glow-two {
+  color: #fff;
+  -webkit-animation: glow-two 1s ease-in-out infinite alternate;
+  -moz-animation: glow-two 1s ease-in-out infinite alternate;
+  animation: glow-two 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px rgb(0, 157, 248), 0 0 30px #009de6, 0 0 40px #0004e6, 0 0 50px #003de6, 0 0 60px #00c4e6, 0 0 70px #00e6e6;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #1077ff, 0 0 40px #4d6eff, 0 0 50px #4db8ff, 0 0 60px #4d50ff, 0 0 70px #4d94ff, 0 0 80px #4ddbff;
+  }
+}
+
+@-webkit-keyframes glow-two {
+  from {
+    text-shadow: 0 0 20px #fff, 0 0 30px #4d9aff, 0 0 40px #4d7cff, 0 0 50px #4db8ff, 0 0 60px #4d50ff, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+   }
+  to {
+    text-shadow:     0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
 }

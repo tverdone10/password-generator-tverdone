@@ -9,6 +9,11 @@ var sym = ["!", "?", ",", ".", " ", "@", "#", "$", "%", "^", "&", "*", "(", ")",
 
 console.log(num)
 
+// THE PROBLEM WITH THIS METHOD IS THAT IT CREATES 2 OF EACH 
+//TYPE OF CHARACTER EVERY TIME YOU GENERATE A PASSWORD.
+//COME UP WITH A NEW WAY TOMORROW, OR FIND A WAY TO MAKE THIS WORK BETTER.
+
+
 var randomUpper = upperCase [Math.floor(Math.random()*upperCase.length)]
 var randomNum = num [Math.floor(Math.random()*num.length)]
 var randomLower = lowerCase [Math.floor(Math.random()*lowerCase.length)]
@@ -23,6 +28,8 @@ console.log(randomUpper)
 console.log(randomNum)
 console.log(randomLower)
 console.log(randomSym)
+
+
 
 var passWord = randomUpper + randomNum + randomLower + randomSym
 
@@ -58,7 +65,7 @@ function copyClipboard(){
 
 }
 
-// or
+// ALT METHOD I DIDN'T DO ANYTHING WITH -- MAYBE FIGURE THIS OUT TMRW
 
 // var passVariables = {
 //     capital: "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "Jones",
