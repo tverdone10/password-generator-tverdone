@@ -21,7 +21,7 @@ console.log(randomSym)
 
 var passWord = randomUpper + randomNum + randomLower + randomSym
 
-var passArray = [randomUpper, randomNum, randomLower, randomSym]
+var passArray = [randomUpper, randomNum, randomLower, randomSym, randomUpper, randomNum, randomLower, randomSym]
 
 console.log(passArray)
 console.log(passWord)
