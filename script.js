@@ -14,6 +14,11 @@ var randomNum = num [Math.floor(Math.random()*num.length)]
 var randomLower = lowerCase [Math.floor(Math.random()*lowerCase.length)]
 var randomSym = sym [Math.floor(Math.random()*sym.length)]
 
+var randomUpper2 = upperCase [Math.floor(Math.random()*upperCase.length)]
+var randomNum2 = num [Math.floor(Math.random()*num.length)]
+var randomLower2 = lowerCase [Math.floor(Math.random()*lowerCase.length)]
+var randomSym2 = sym [Math.floor(Math.random()*sym.length)]
+
 console.log(randomUpper)
 console.log(randomNum)
 console.log(randomLower)
@@ -21,7 +26,9 @@ console.log(randomSym)
 
 var passWord = randomUpper + randomNum + randomLower + randomSym
 
-var passArray = [randomUpper, randomNum, randomLower, randomSym, randomUpper, randomNum, randomLower, randomSym]
+var passArray = [randomUpper, randomNum, randomLower, randomSym]
+var passArray2 = [randomUpper2, randomNum2, randomLower2, randomSym2]
+
 
 console.log(passArray)
 console.log(passWord)
@@ -34,10 +41,12 @@ function shuffle(passArray) {
     })
 }
 
+
+
 console.log(shuffle(passArray))
 
 function genErate () {
-    document.getElementById("password").innerHTML = passArray.join("")
+    document.getElementById("password").innerHTML = passArray.join("") + passArray2.join("")
 }
 
 function copyClipboard(){
