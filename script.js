@@ -24,7 +24,14 @@ function genErate () {
 }
 
 
+function copyClipboard(){
+    var copyText = document.querySelector("textarea");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999)
+    document.execCommand("copy"); 
 
+
+}
 
 
 
@@ -103,11 +110,11 @@ function genErate () {
     
 // }
 // }
-// function copyClipboard(){
-//     var copyText = document.querySelector("textarea");
-//     copyText.select();
-//     copyText.setSelectionRange(0, 99999)
-//     document.execCommand("copy"); 
+function copyClipboard(){
+    var copyText = document.querySelector("textarea");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999)
+    document.execCommand("copy"); 
 
 
-// }
+}
